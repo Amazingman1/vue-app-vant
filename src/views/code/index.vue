@@ -1,3 +1,10 @@
+<!--
+ * @Author: wangxuan
+ * @Date: 2020-09-24 17:19:09
+ * @LastEditors: wangxuan
+ * @LastEditTime: 2020-09-25 17:43:00
+ * @FilePath: /vant-app/src/views/code/index.vue
+-->
 <template>
   <div>
     <div class="img-content">
@@ -44,7 +51,7 @@ export default {
   methods: {
     makeCode(uuid) {
       new QRCode(document.getElementById('myCode'), {
-        text: `请联系客服申请激活! 客服电话：4001600703 ; MAC: ${uuid}`,
+        text: `http://auto_machine.eloadspider.com/?uuid=${uuid}`,
         // text: 'https://pms.lvyuetravel.com/epms/lv/rooms',
         width: 240,
         height: 240,
